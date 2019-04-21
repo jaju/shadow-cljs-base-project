@@ -1,4 +1,4 @@
-import { hello } from './hello';
-import { React } from 'react';
-import { ReactDOM } from 'react-dom';
-hello("World");
+import {sayHello, showHello} from './hello';
+
+sayHello("World");
+showHello("app", "YooHoo!");
