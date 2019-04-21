@@ -32,6 +32,11 @@ module.exports = [
           viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       })
-    ]
+    ],
+    devServer: {
+      contentBase: path.join(__dirname, "public"),
+      compress: true,
+      port: 9000
+    }
   }
 ];

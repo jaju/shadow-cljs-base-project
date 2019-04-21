@@ -1,0 +1,16 @@
+$global-flexbox: true;
+$print-transparent-backgrounds: true;
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$black: #0a0a0a;
+$white: #fefefe;
+
+$foundation-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+$body-background: $white;
+$body-font-color: $black;
+$body-antialiased: true;
