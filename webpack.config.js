@@ -3,40 +3,35 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = [
   {
-    mode: "development",
-    entry: {
+    mode:      "development",
+    entry:     {
       main: "./src/js/bundle.js"
     },
-    module: {
+    module:    {
       rules: [
         {
-          test: /\.(js|jsx)$/,
+          test:    /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: ["babel-loader"]
+          use:     ["babel-loader"]
         }
       ]
     },
-    resolve: {
+    resolve:   {
       extensions: ["*", ".js", ".jsx"]
     },
-    output: {
-      path: path.resolve(__dirname, "public"),
+    output:    {
+      path:     path.resolve(__dirname, "public"),
       filename: "js/bundle.js"
     },
-    plugins: [
+    plugins:   [
       new HtmlWebpackPlugin({
-        title: "Hello, From HTML Webpack Plugin!",
+        title:    "Hello, From HTML Webpack Plugin!",
         filename: "index.html",
         template: "src/html/index.html",
-        meta: {
+        meta:     {
           viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
         }
       })
-    ],
-    devServer: {
-      contentBase: path.join(__dirname, "public"),
-      compress: true,
-      port: 9000
-    }
+    ]
   }
 ];

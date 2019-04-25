@@ -1,7 +1,7 @@
 (ns deskapp.main
   (:require [reagent.core :as r]))
 
-(defn init! [& args]
+(defn init! []
       (.log js/console "Hello from shadow-cljs!"))
 
 (init!)
